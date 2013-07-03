@@ -23,4 +23,5 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'sinatra'
   gem.add_development_dependency 'capybara'
   gem.add_development_dependency 'capybara-webkit'
+  gem.add_development_dependency 'debugger'
 end
