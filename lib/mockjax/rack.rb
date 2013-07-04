@@ -19,6 +19,5 @@ class Rack::Mockjax
     if @response.is_a? ActionDispatch::Response
       @response.body = @response.body.gsub!(/(<\/head>)/, "<script src='#{Mockjax.path_to_js}' type='text/javascript'></script>\n<script>#{mocks}</script>\\1")
     end
-    @headers['Content-Length'] = Rack::Utils.bytesize(@response.body.to_s).to_s if @headers['Content-Length'].present?
   end
 end
