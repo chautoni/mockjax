@@ -1,5 +1,5 @@
 require 'rack'
-require 'rspec'
+require 'rspec-rails'
 
 require 'mockjax/version'
 require 'mockjax/rails'
